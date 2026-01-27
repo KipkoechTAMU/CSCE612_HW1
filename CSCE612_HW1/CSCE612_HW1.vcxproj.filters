@@ -41,19 +41,11 @@
     <ClInclude Include="HTTPClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParserBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParser_debug_x64.lib">
-      <Filter>Source Files</Filter>
-    </Library>
-    <Library Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParser_release_x64.lib">
-      <Filter>Source Files</Filter>
-    </Library>
+    <ClInclude Include="HTMLParserBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

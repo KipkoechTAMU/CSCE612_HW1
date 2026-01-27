@@ -114,6 +114,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(ProjectDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>HTMLParser_debug_x64.lib;ws2_32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,6 +133,9 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>HTMLParser_release_x64.lib
+;ws2_32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -149,15 +153,11 @@
     <ClCompile Include="URLParser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParserBase.h" />
+    <ClInclude Include="HTMLParserBase.h" />
     <ClInclude Include="HTTPClient.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Socket.h" />
     <ClInclude Include="URLParser.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParser_debug_x64.lib" />
-    <Library Include="..\..\..\..\Downloads\cs612\HTMLParserTest\HTMLParserTest\HTMLParser_release_x64.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
